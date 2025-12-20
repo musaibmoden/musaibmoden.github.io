@@ -177,7 +177,7 @@ contactForm.addEventListener('submit', (e) => {
     // Create mailto link (GitHub Pages doesn't support server-side processing)
     const subject = encodeURIComponent(`Contact from ${name}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-    const mailtoLink = `mailto:your.email@example.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:musaibsajjadmoden@gmail.com?subject=${subject}&body=${body}`;
     
     // Open email client
     window.location.href = mailtoLink;
