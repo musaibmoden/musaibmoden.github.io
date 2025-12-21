@@ -407,19 +407,6 @@ section {
     letter-spacing: -1px;
 }
 
-.section-title::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: clamp(3rem, 8vw, 5rem);
-    font-weight: 900;
-    color: rgba(59, 130, 246, 0.05);
-    z-index: -1;
-    white-space: nowrap;
-}
-
 .section-title::after {
     content: '';
     position: absolute;
