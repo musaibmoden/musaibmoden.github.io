@@ -3,10 +3,13 @@
    ==================================== */
 
 :root {
-    --primary-color: #6366f1;
-    --primary-dark: #4f46e5;
-    --secondary-color: #8b5cf6;
-    --accent-color: #ec4899;
+    --primary-color: #0b2545;
+    --primary-dark: #091b35;
+    --secondary-color: #2ec4b6;
+    --accent-color: #ff6b6b;
+    --primary-rgb: 11, 37, 69;
+    --secondary-rgb: 46, 196, 182;
+    --accent-rgb: 255, 107, 107;
     --bg-dark: #0f172a;
     --bg-darker: #020617;
     --bg-card: #1e293b;
@@ -218,12 +221,12 @@ body {
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
-    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 10px 25px rgba(var(--primary-rgb), 0.2);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(99, 102, 241, 0.3);
+    box-shadow: 0 15px 35px rgba(var(--primary-rgb), 0.3);
 }
 
 .btn-secondary {
@@ -335,13 +338,13 @@ body {
 }
 
 .interest-tag {
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(var(--primary-rgb), 0.08);
     color: var(--primary-color);
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
-    border: 1px solid rgba(99, 102, 241, 0.3);
+    border: 1px solid rgba(var(--primary-rgb), 0.25);
     display: flex;
     align-items: center;
     gap: 8px;
@@ -349,7 +352,7 @@ body {
 }
 
 .interest-tag:hover {
-    background: rgba(99, 102, 241, 0.2);
+    background: rgba(var(--primary-rgb), 0.14);
     border-color: var(--primary-color);
 }
 
@@ -363,7 +366,7 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 12px;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+    background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.08), rgba(var(--secondary-rgb), 0.08));
     border: 2px solid var(--border-color);
     display: flex;
     align-items: center;
@@ -380,7 +383,7 @@ body {
 
 .skills {
     padding: 100px 20px;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.04) 0%, rgba(var(--secondary-rgb), 0.04) 100%);
 }
 
 .skills-grid {
@@ -409,7 +412,7 @@ body {
 
 .skills-category:hover {
     border-color: var(--primary-color);
-    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 10px 30px rgba(var(--primary-rgb), 0.08);
     transform: translateY(-5px);
 }
 
@@ -509,12 +512,12 @@ body {
 .project-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary-color);
-    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+    box-shadow: 0 20px 40px rgba(var(--primary-rgb), 0.18);
 }
 
 .project-image {
     height: 200px;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.15));
+    background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.12), rgba(var(--secondary-rgb), 0.12));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -524,7 +527,7 @@ body {
 }
 
 .project-card:hover .project-image {
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(139, 92, 246, 0.25));
+    background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.18), rgba(var(--secondary-rgb), 0.18));
 }
 
 .project-content {
@@ -556,7 +559,7 @@ body {
 }
 
 .tech-tag {
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(var(--primary-rgb), 0.12);
     color: var(--primary-color);
     padding: 4px 12px;
     border-radius: 4px;
@@ -572,7 +575,7 @@ body {
 .project-link {
     flex: 1;
     padding: 8px 12px;
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(var(--primary-rgb), 0.12);
     color: var(--primary-color);
     border-radius: 6px;
     text-decoration: none;
@@ -584,7 +587,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 6px;
-    border: 1px solid rgba(99, 102, 241, 0.3);
+    border: 1px solid rgba(var(--primary-rgb), 0.22);
 }
 
 .project-link:hover {
@@ -599,7 +602,7 @@ body {
 
 .experience {
     padding: 100px 20px;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.04) 0%, rgba(var(--secondary-rgb), 0.04) 100%);
 }
 
 .timeline {
@@ -657,7 +660,7 @@ body {
 
 .timeline-content:hover {
     border-color: var(--primary-color);
-    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 10px 30px rgba(var(--primary-rgb), 0.08);
 }
 
 .timeline-header {
@@ -747,7 +750,7 @@ form {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.08);
 }
 
 .form-group textarea {
@@ -843,7 +846,7 @@ form {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background: rgba(99, 102, 241, 0.1);
+    background: rgba(var(--primary-rgb), 0.08);
     border: 1px solid var(--border-color);
     display: flex;
     align-items: center;
@@ -887,7 +890,7 @@ form {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(var(--primary-rgb), 0.12);
     border: 1px solid var(--border-color);
     color: var(--primary-color);
     font-size: 18px;
