@@ -44,7 +44,7 @@ function highlightActiveSection() {
     });
 }
 
-window.addEventListener('scroll', highlightActiveSection);
+// removed direct scroll listener to avoid frequent synchronous calls
 
 // ====================================
 // SCROLL ANIMATIONS WITH INTERSECTION OBSERVER
@@ -58,7 +58,8 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.animation = getComputedStyle(entry.target).animation;
+            // start reveal without forcing layout/reflow via getComputedStyle
+            entry.target.classList.add('in-view');
             entry.target.style.opacity = '1';
             observer.unobserve(entry.target);
         }
@@ -76,21 +77,13 @@ document.querySelectorAll('.about-text, .about-image, .skills-category, .project
 
 const backToTopBtn = document.getElementById('backToTop');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        backToTopBtn.classList.add('show');
-    } else {
-        backToTopBtn.classList.remove('show');
-    }
-});
-
-backToTopBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+// Back to top toggle and click handler (guard nulls)
+if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-});
+}
 
 // ====================================
 // CONTACT FORM HANDLING
@@ -143,20 +136,22 @@ function showFormMessage(text, type) {
 
 const navbar = document.querySelector('.navbar');
 
-window.addEventListener('scroll', () => {
+// guard navbar
+function updateNavbarBorder() {
+    if (!navbar) return;
     if (window.scrollY > 50) {
         navbar.style.borderBottomColor = 'rgba(51, 65, 85, 0.5)';
     } else {
         navbar.style.borderBottomColor = 'var(--border-color)';
     }
-});
+}
 
 // ====================================
 // PAGE LOAD ANIMATION
 // ====================================
 
 window.addEventListener('load', () => {
-    // Trigger animations on initial load
+    // Trigger initial state
     highlightActiveSection();
 });
 
@@ -209,12 +204,13 @@ skillsObserver.observe(skillsSection);
 
 const heroSection = document.querySelector('.hero');
 
-window.addEventListener('scroll', () => {
+function parallaxEffect() {
+    if (!heroSection) return;
     if (window.innerWidth > 768) {
         const scrollPosition = window.scrollY;
         heroSection.style.backgroundPosition = `0 ${scrollPosition * 0.5}px`;
     }
-});
+}
 
 // ====================================
 // KEYBOARD NAVIGATION SUPPORT
@@ -289,4 +285,16 @@ function debounce(func, delay) {
 }
 
 const debouncedHighlight = debounce(highlightActiveSection, 100);
-window.addEventListener('scroll', debouncedHighlight);
+// Combine scroll-related updates into a single debounced handler to reduce work
+function onScroll() {
+    highlightActiveSection();
+    updateNavbarBorder();
+    parallaxEffect();
+    if (backToTopBtn) {
+        if (window.scrollY > 300) backToTopBtn.classList.add('show');
+        else backToTopBtn.classList.remove('show');
+    }
+}
+
+const debouncedOnScroll = debounce(onScroll, 80);
+window.addEventListener('scroll', debouncedOnScroll);
