@@ -1,0 +1,162 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+input {
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+:root {
+  --foreground-rgb: 0, 255, 0;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+  --terminal-green: #0f0;
+  --terminal-blue: #07f;
+  --terminal-red: #f55;
+  --terminal-yellow: #ff0;
+  --terminal-purple: #9c27b0;
+  --font-mono: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: var(--font-mono);
+}
+
+@layer utilities {
+  .terminal-text {
+    color: var(--terminal-green);
+    text-shadow: 0 0 5px #00ff00b3;
+  }
+
+  .terminal-header {
+    color: var(--terminal-blue);
+    text-shadow: 0 0 5px #0077ffb3;
+  }
+
+  .terminal-error {
+    color: var(--terminal-red);
+    text-shadow: 0 0 5px #ff5555b3;
+  }
+
+  .terminal-warning {
+    color: var(--terminal-yellow);
+    text-shadow: 0 0 5px #ffff00b3;
+  }
+
+  .terminal-highlight {
+    color: var(--terminal-purple);
+    text-shadow: 0 0 5px #9c27b0b3;
+  }
+
+  .terminal-box {
+    border: 1px solid var(--terminal-green);
+    border-radius: 4px;
+    background-color: #000000bf;
+    padding: 1rem;
+    box-shadow: 0 0 10px #00ff004d;
+  }
+
+  .terminal-cursor {
+    display: inline-block;
+    width: 8px;
+    height: 18px;
+    background-color: var(--terminal-green);
+    box-shadow: 0 0 4px #00ff00b3;
+    margin-left: 1px;
+    position: relative;
+    top: 1px;
+    animation: 1s step-end infinite blink;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .glitch {
+    position: relative;
+    animation: 1s linear infinite glitch;
+  }
+
+  @keyframes glitch {
+    2%, 8%, 14%, 40%, 42% {
+      transform: translate(-2px)skew(0deg);
+    }
+
+    4%, 6%, 10%, 16%, 44% {
+      transform: translate(2px)skew(0deg);
+    }
+
+    62%, 64%, 98% {
+      transform: translate(0)skew(5deg);
+    }
+  }
+
+  .terminal-input {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: none;
+    caret-color: #0000;
+    color: #0000;
+    pointer-events: auto;
+    z-index: -1;
+  }
+
+  .terminal-input:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+
+  input[type="text"] {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .terminal-container {
+    cursor: text;
+  }
+
+  .command-line {
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+
+  .command-prompt {
+    color: var(--terminal-green);
+    margin-right: 8px;
+    display: inline-block;
+    user-select: none;
+  }
+
+  .command-text {
+    color: var(--terminal-green);
+    white-space: pre;
+    display: inline;
+  }
+}
+
+/*# sourceMappingURL=src_app_globals_b52d8e88.css.map*/
