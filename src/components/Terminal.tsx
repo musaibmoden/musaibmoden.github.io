@@ -244,7 +244,7 @@ export default function Terminal() {
         </div>
         <div className="flex items-center gap-2">
           <FiLinkedin className="text-lg" />
-          <a href="https://linkedin.com/in/musaibsajjad" target="_blank" rel="noopener noreferrer" className="terminal-highlight">linkedin.com/in/musaibsajjad</a>
+          <a href="https://www.linkedin.com/in/musaib-sajjad-b86368277/" target="_blank" rel="noopener noreferrer" className="terminal-highlight">linkedin.com/in/musaib-sajjad</a>
         </div>
         <div className="flex items-center gap-2">
           <FiInfo className="text-lg" />
@@ -639,7 +639,7 @@ export default function Terminal() {
               </div>
               <div className="flex items-center gap-2">
                 <FiLinkedin className="text-lg" />
-                <a href="https://linkedin.com/in/musaibsajjad" target="_blank" rel="noopener noreferrer" className="terminal-highlight">linkedin.com/in/safwanadnan</a>
+                <a href="https://www.linkedin.com/in/musaib-sajjad-b86368277/" target="_blank" rel="noopener noreferrer" className="terminal-highlight">linkedin.com/in/musaib-sajjad</a>
               </div>
               <div className="flex items-center gap-2 mt-3">
                 <FiInfo className="text-lg" />
