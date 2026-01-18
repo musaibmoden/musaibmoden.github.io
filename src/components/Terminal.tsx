@@ -6,6 +6,7 @@ import { FiTerminal, FiGithub, FiLinkedin, FiMail, FiDownload, FiVolume2, FiVolu
 import { useSounds } from './SoundManager';
 import GitHubActivity from './GitHubActivity';
 import NeofetchDisplay from './NeofetchDisplay';
+import { li } from 'framer-motion/client';
 
 type Command = {
   input: string;
@@ -514,13 +515,15 @@ export default function Terminal() {
           <div className="py-2">
             <h3 className="terminal-header font-bold text-lg">About Me</h3>
             <p className="my-2">
-              I am a Software Developer and Entrepreneur specializing in web applications, 
-              eCommerce solutions, and API development.
+             I’m a Software Developer and Entrepreneur specializing in web 
+             applications and eCommerce platforms.
             </p>
             <p>
-              I've co-founded multiple startups including WhatFlow (a WhatsApp API solution) 
-              and SKNS.PK (a Shopify eCommerce store). I combine technical expertise with 
-              business acumen to create profitable digital products.
+              I’ve worked on multiple digital ventures and tech projects, 
+              combining strong technical skills with a business mindset. From 
+              building scalable websites to launching online stores, I focus on
+              creating practical, profitable solutions that solve real world
+              problems.
             </p>
           </div>
         );
@@ -541,7 +544,7 @@ export default function Terminal() {
                   <li>Responsive Web Design</li>
                   <li>Shopify Polaris</li>
                   <li>Shopify Theme Customization</li>
-                  <li>Liquid Template Language</li>
+
                 </ul>
               </div>
               <div className="terminal-box">
@@ -549,9 +552,9 @@ export default function Terminal() {
                 <ul className="pl-4 list-disc">
                   <li>Node.js</li>
                   <li>REST APIs</li>
-                  <li>API Development</li>
+                  <li>Java</li>
                   <li>API Testing</li>
-                  <li>Express</li>
+                  <li>Maven</li>
                   <li>Python</li>
                   <li>Automation</li>
                   <li>Debugging</li>
@@ -569,8 +572,8 @@ export default function Terminal() {
                   <li>Data Analytics</li>
                   <li>Technical Documentation</li>
                   <li>WordPress</li>
-                  <li>Postman API</li>
                   <li>Scalable Web Applications</li>
+                  <li>UI Designer</li>
                 </ul>
               </div>
             </div>
@@ -628,15 +631,15 @@ export default function Terminal() {
             <div className="flex flex-col space-y-2 mt-2">
               <div className="flex items-center gap-2">
                 <FiMail className="text-lg" />
-                <span>safwanadnan19@gmail.com</span>
+                <span>musaibsajjadmoden@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <FiGithub className="text-lg" />
-                <a href="https://github.com/safwanadnan" target="_blank" rel="noopener noreferrer" className="terminal-highlight">github.com/safwanadnan</a>
+                <a href="https://github.com/musaibmoden" target="_blank" rel="noopener noreferrer" className="terminal-highlight">github.com/musaibmoden</a>
               </div>
               <div className="flex items-center gap-2">
                 <FiLinkedin className="text-lg" />
-                <a href="https://linkedin.com/in/safwanadnan" target="_blank" rel="noopener noreferrer" className="terminal-highlight">linkedin.com/in/safwanadnan</a>
+                <a href="https://linkedin.com/in/musaibsajjad" target="_blank" rel="noopener noreferrer" className="terminal-highlight">linkedin.com/in/safwanadnan</a>
               </div>
               <div className="flex items-center gap-2 mt-3">
                 <FiInfo className="text-lg" />

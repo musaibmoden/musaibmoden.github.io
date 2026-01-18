@@ -3,9 +3,9 @@
 > A fully customizable, interactive terminal-themed portfolio template for developers, built with React, TypeScript, and Tailwind CSS. Features command-line navigation, Matrix background effects, GitHub activity integration, and a virtual file system.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/safwanadnan/safwanadnan.github.io?style=social)](https://github.com/safwanadnan/safwanadnan.github.io/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/safwanadnan.github.io/network)](https://github.com/safwanadnan/safwanadnan.github.io/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/safwanadnan/safwanadnan.github.io)](https://github.com/safwanadnan/safwanadnan.github.io/issues)
+[![GitHub stars](https://img.shields.io/github/stars/musaibmoden/musaibmoden.github.io?style=social)](https://github.com/musaibmoden/musaibmoden.github.io/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/musaibmoden/musaibmoden.github.io/network)](https://github.com/musaibmoden/musaibmoden.github.io/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/musaibmoden/musaibmoden.github.io)](https://github.com/musaibmoden/musaibmoden.github.io/issues)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 ![Terminal Portfolio Demo](public/images/image.png)
@@ -211,17 +211,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  <a href="https://github.com/safwanadnan/safwanadnan.github.io">
-    <img src="https://img.shields.io/github/stars/safwanadnan/safwanadnan.github.io?style=social" alt="GitHub stars">
+  <a href="https://github.com/musaibmoden/musaibmoden.github.io">
+    <img src="https://img.shields.io/github/stars/musaibmoden/musaibmoden.github.io?style=social" alt="GitHub stars">
   </a>
-  <a href="https://github.com/safwanadnan/safwanadnan.github.io/network/members">
-    <img src="https://img.shields.io/github/forks/safwanadnan/safwanadnan.github.io?style=social" alt="GitHub forks">
+  <a href="https://github.com/musaibmoden/musaibmoden.github.io/network/members">
+    <img src="https://img.shields.io/github/forks/musaibmoden/musaibmoden.github.io?style=social" alt="GitHub forks">
   </a>
-  <a href="https://github.com/safwanadnan/safwanadnan.github.io/issues">
-    <img src="https://img.shields.io/github/issues/safwanadnan/safwanadnan.github.io" alt="GitHub issues">
+  <a href="https://github.com/musaibmoden/musaibmoden.github.io/issues">
+    <img src="https://img.shields.io/github/issues/musaibmoden/musaibmoden.github.io" alt="GitHub issues">
   </a>
-  <a href="https://github.com/safwanadnan/safwanadnan.github.io/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/safwanadnan/safwanadnan.github.io" alt="License">
+  <a href="https://github.com/musaibmoden/musaibmoden.github.io/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/musaibmoden/musaibmoden.github.io" alt="License">
   </a>
 </p>
 

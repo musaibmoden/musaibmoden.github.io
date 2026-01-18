@@ -16,7 +16,7 @@ export default function Home() {
         
         <footer className="mt-8 text-gray-400 text-xs w-full max-w-4xl mx-auto flex items-center justify-between px-4">
           <div>
-            <p>© {new Date().getFullYear()} musaib sajjad. All rights reserved.</p>
+            <p>© 2026 musaib sajjad. All rights reserved.</p>
             <p className="mt-1">Built with Next.js, TypeScript, and Tailwind CSS</p>
           </div>
           
