@@ -53,7 +53,7 @@ Terminal Portfolio is a modern, interactive portfolio template designed for deve
 
 ## 🔍 Demo
 
-[View Live Demo](https://safwanadnan.github.io/) | [View GitHub Repository](https://github.com/safwanadnan/safwanadnan.github.io)
+[View Live Demo](https://musaibmoden.github.io/) | [View GitHub Repository](https://github.com/musaibmoden/musaibmoden.github.io)
 
 ## 💻 Commands
 
@@ -80,7 +80,7 @@ Navigate the portfolio using these terminal commands:
 
 ```bash
 # Clone the repository
-git clone https://github.com/safwanadnan/safwanadnan.github.io.git terminal-portfolio
+git clone https://github.com/musaibmoden/musaibmoden.github.io.git terminal-portfolio
 
 # Navigate to project directory
 cd terminal-portfolio
@@ -226,7 +226,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 </p>
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/safwanadnan">Safwan Adnan</a>
+  Made with ❤️ by <a href="https://github.com/musaibmoden">Musaib Sajjad</a>
 </p>
 
 <!-- Keywords for SEO: terminal portfolio, developer portfolio, interactive portfolio, command line portfolio, react portfolio template, terminal themed website, developer resume, coding portfolio, web developer showcase, programmer portfolio, terminal UI, command line interface, matrix background portfolio -->
