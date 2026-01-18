@@ -10,8 +10,12 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Musaib Sajjad| Portfolio",
+  title: "Musaib Sajjad | Portfolio",
   description: "A terminal-themed portfolio showcasing my technical and design skills",
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
