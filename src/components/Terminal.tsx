@@ -240,11 +240,11 @@ export default function Terminal() {
       <div className="space-y-2">
         <div className="flex items-center gap-2">
           <FiGithub className="text-lg" />
-          <a href="https://github.com/safwanadnan" target="_blank" rel="noopener noreferrer" className="terminal-highlight">github.com/safwanadnan</a>
+          <a href="https://github.com/musaibmoden" target="_blank" rel="noopener noreferrer" className="terminal-highlight">github.com/musaibmoden</a>
         </div>
         <div className="flex items-center gap-2">
           <FiLinkedin className="text-lg" />
-          <a href="https://linkedin.com/in/safwanadnan" target="_blank" rel="noopener noreferrer" className="terminal-highlight">linkedin.com/in/safwanadnan</a>
+          <a href="https://linkedin.com/in/musaibsajjad" target="_blank" rel="noopener noreferrer" className="terminal-highlight">linkedin.com/in/musaibsajjad</a>
         </div>
         <div className="flex items-center gap-2">
           <FiInfo className="text-lg" />
